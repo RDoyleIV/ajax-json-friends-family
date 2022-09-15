@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AJAX/JSON Friends and Family</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="text-center border-bottom border-primary"><h1>Friends and Family</h1></div>
+            <div class="d-flex justify-content-center">
+                <form>
+                <select class="m-4 pr-4" multiple size="7" id="dropSel">
+                </select>
+                <select class="m-4 pr-4" multiple size="7" id="lnameSel">
+                </select>
+                <select class="m-4 pr-4" multiple size="7" id="relationSel">
+                </select>
+                </form>
+            </div>
+            <h6>*To display everyone just press the button or select the "--" in any or all fields.</h6>
+            <button class="btn btn-primary btn-block w-75 mx-auto m-2" onclick="dropData()">Show Selection</button>
+            <div class="w-50 pb-1 mx-auto text-center bg-dark text-primary">
+                <p>Name(s): <span id="fname"></span></p>
+            </div>
+        <script src="js/FamilyAndFriends.js" defer></script>
+    </body>
+</html>
